@@ -1,0 +1,10 @@
+.cart-icon{
+  color: white;
+  transition: all 600ms;
+  cursor: pointer;
+  padding: 1em;
+}
+.cart-icon:hover{
+  color: var(--green);
+  transform: scale(1.1);
+}
