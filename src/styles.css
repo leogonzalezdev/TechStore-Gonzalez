@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
 :root{
-  --dark:#000000;
-  --blue:#201f25;
-  --light: #ffffff;
-  --green:#02c3a8;
-  --green-dark:#348275;
+  --dark:#2b2b2b;
+  --pink:#d85698;
+  --white: #ffffff;
+  --grey:#efefef;
+  --green:#00d5c2;
+  --cyan:#00e0ff;
+  --sky:#93B0E0;
+  --yellow:#ffed00;
+  --grey-dark:#727272;
 }
 
 *{
@@ -13,11 +17,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   color: var(--dark);
   height: 100vh;
   background: var(--light) ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
 }

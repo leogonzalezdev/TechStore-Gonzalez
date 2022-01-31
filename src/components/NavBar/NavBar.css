@@ -2,53 +2,59 @@
 
 .header{
   width: 100%;
-  height: 100px;
-  background: var(--blue);
+  height: 80px;
+  background: var(--grey);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 3em;
+  padding: 1em 6em;
   color: var(--light);
+}
+.header .left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo{
   cursor: pointer;
 }
-.session-container{
+.right{
   display: flex;
+  align-items: center;
 }
 
 .user{
-  margin-left: 1em;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
   cursor: pointer;
-  border: 1px solid var(--light);
-  background: var(--blue);
-  padding: 0px 12px;
-  border-radius: 40px;
+  background: var(--white);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   transition: all 1s;
 }
 .user:hover{
-  background: var(--light);
+  background: var(--sky);
   color: var(--dark);
 }
 .user .user-avatar{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 .navbar{
-  padding: .3em;
-  width: 100%;
+  padding:1em 0;
+  width: 728px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  background: var(--green);
+  justify-content: space-between;
+  background: var(--white);
   color: var(--dark);
-  border-radius: 0 0 35px 35px;
+  border-radius: 5px;
 }
 .navbar .nav-link{
   font-weight: 500;
@@ -59,7 +65,8 @@
   transition: all 600ms;
 }
 .navbar .nav-link:hover{
-  color: var(--light);
+  transform: scale(1.1);
+  color: var(--pink);
 }
 @media (max-width:768px) {
   .user{
@@ -73,5 +80,13 @@
   }
   .header{
     padding: 1em;
+  }
+  .navbar{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 25%;
+    flex-direction: column;
+    background: white;
   }
 }

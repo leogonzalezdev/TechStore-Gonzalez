@@ -1,9 +1,12 @@
-import icon from '../../img/cart-icon.svg'
+import icon from '../../img/cart-icon.svg';
 import './CartWidget.css';
 
 const CartWidget = () => {
   return(
-    <img className='cart-icon' src={icon}/>
+    <div className='cart-container'>
+      <img className='cart-icon' src={icon}/>
+      <p>Cart<span></span></p>
+    </div>
   );
 }
 

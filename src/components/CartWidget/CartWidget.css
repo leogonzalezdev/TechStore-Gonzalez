@@ -1,8 +1,24 @@
+.cart-container{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  width: 93px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 15px;
+  padding:  10px;
+  transition: all 600ms ease;
+}
+.cart-container:hover{
+  background: var(--sky);
+  color: var(--white);
+}
 .cart-icon{
-  color: white;
+  color: var(--dark);
   transition: all 600ms;
   cursor: pointer;
-  padding: 1em;
 }
 .cart-icon:hover{
   color: var(--green);

@@ -5,3 +5,11 @@
   align-items: center;
   justify-content: center;
 }
+.item-list-container{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.item-list-container h3{
+  font-size: 35px;
+}

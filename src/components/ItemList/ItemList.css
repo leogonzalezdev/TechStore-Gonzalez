@@ -1,0 +1,27 @@
+.container{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--grey);
+  padding: 2em 5.7em;
+}
+.item-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width:1024px) {
+  .container{
+    padding: 2em 3em;
+  }
+}
+@media (max-width:768px) {
+  .container{
+    padding: 2em 1em;
+  }
+  .container h3{
+    font-size: 22px;
+  }
+}
